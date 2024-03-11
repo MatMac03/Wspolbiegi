@@ -1,13 +1,12 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\WSPOLLLLLL\\Wspolbiegi\\",
+  "WorkspaceRootPath": "C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3CE124AE-A4DC-436D-9406-A9BC1D94A302}|Elementy rozwi\u0105zania{3CE124AE-A4DC-436D-9406-A9BC1D94A302}|D:\\WSPOLLLLLL\\Wspolbiegi\\REDME.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
-      "RelativeMoniker": "D:0:0:{3CE124AE-A4DC-436D-9406-A9BC1D94A302}|Elementy rozwi\u0105zania{3CE124AE-A4DC-436D-9406-A9BC1D94A302}|solutionrelative:REDME.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+      "AbsoluteMoniker": "D:0:0:{EEE3EDC8-19E2-4A60-BAD3-AD42FF5834A9}|..\\Test1\\Test1.csproj|c:\\users\\nikol\\source\\repos\\matmac03\\test1\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6E8671CA-BA92-485B-AA98-EEDB34D91B01}|Wspolbiegi.csproj|d:\\wspollllll\\wspolbiegi\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6E8671CA-BA92-485B-AA98-EEDB34D91B01}|Wspolbiegi.csproj|c:\\users\\nikol\\source\\repos\\matmac03\\wspolbiegi\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6E8671CA-BA92-485B-AA98-EEDB34D91B01}|Wspolbiegi.csproj|solutionrelative:main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -18,36 +17,40 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "REDME.md",
-              "DocumentMoniker": "D:\\WSPOLLLLLL\\Wspolbiegi\\REDME.md",
-              "RelativeDocumentMoniker": "REDME.md",
-              "ToolTip": "D:\\WSPOLLLLLL\\Wspolbiegi\\REDME.md",
-              "RelativeToolTip": "REDME.md",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2024-03-11T12:10:17.212Z",
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\Users\\nikol\\source\\repos\\MatMac03\\Test1\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "..\\Test1\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\nikol\\source\\repos\\MatMac03\\Test1\\UnitTest1.cs",
+              "RelativeToolTip": "..\\Test1\\UnitTest1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T13:58:04.01Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Main.cs",
-              "DocumentMoniker": "D:\\WSPOLLLLLL\\Wspolbiegi\\Main.cs",
+              "DocumentMoniker": "C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Main.cs",
               "RelativeDocumentMoniker": "Main.cs",
-              "ToolTip": "D:\\WSPOLLLLLL\\Wspolbiegi\\Main.cs",
+              "ToolTip": "C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Main.cs",
               "RelativeToolTip": "Main.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-11T12:08:16.053Z",
+              "WhenOpened": "2024-03-11T13:56:34.382Z",
               "EditorCaption": ""
             }
           ]

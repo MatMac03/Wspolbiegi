@@ -1,17 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Wspolbiegi
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public int Add(int a, int b)
         {
-            Console.WriteLine("Hello World!");
+            return a + b;
         }
     }
-
 }

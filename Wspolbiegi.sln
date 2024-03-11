@@ -10,6 +10,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementy rozwiązania", "El
 		REDME.md = REDME.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test1", "..\Test1\Test1.csproj", "{EEE3EDC8-19E2-4A60-BAD3-AD42FF5834A9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +22,10 @@ Global
 		{6E8671CA-BA92-485B-AA98-EEDB34D91B01}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E8671CA-BA92-485B-AA98-EEDB34D91B01}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E8671CA-BA92-485B-AA98-EEDB34D91B01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEE3EDC8-19E2-4A60-BAD3-AD42FF5834A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEE3EDC8-19E2-4A60-BAD3-AD42FF5834A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEE3EDC8-19E2-4A60-BAD3-AD42FF5834A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEE3EDC8-19E2-4A60-BAD3-AD42FF5834A9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
