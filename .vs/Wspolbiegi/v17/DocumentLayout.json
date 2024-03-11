@@ -6,8 +6,8 @@
       "AbsoluteMoniker": "D:0:0:{EEE3EDC8-19E2-4A60-BAD3-AD42FF5834A9}|..\\Test1\\Test1.csproj|c:\\users\\nikol\\source\\repos\\matmac03\\test1\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6E8671CA-BA92-485B-AA98-EEDB34D91B01}|Wspolbiegi.csproj|c:\\users\\nikol\\source\\repos\\matmac03\\wspolbiegi\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E8671CA-BA92-485B-AA98-EEDB34D91B01}|Wspolbiegi.csproj|solutionrelative:main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6E8671CA-BA92-485B-AA98-EEDB34D91B01}|Wspolbiegi.csproj|C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Dodawanie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E8671CA-BA92-485B-AA98-EEDB34D91B01}|Wspolbiegi.csproj|solutionrelative:Dodawanie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,7 +35,7 @@
               "RelativeDocumentMoniker": "..\\Test1\\UnitTest1.cs",
               "ToolTip": "C:\\Users\\nikol\\source\\repos\\MatMac03\\Test1\\UnitTest1.cs",
               "RelativeToolTip": "..\\Test1\\UnitTest1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAARAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-11T13:58:04.01Z",
               "EditorCaption": ""
@@ -43,12 +43,12 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Main.cs",
-              "DocumentMoniker": "C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Main.cs",
-              "RelativeDocumentMoniker": "Main.cs",
-              "ToolTip": "C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Main.cs",
-              "RelativeToolTip": "Main.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAFAAAA",
+              "Title": "Dodawanie.cs",
+              "DocumentMoniker": "C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Dodawanie.cs",
+              "RelativeDocumentMoniker": "Dodawanie.cs",
+              "ToolTip": "C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Dodawanie.cs",
+              "RelativeToolTip": "Dodawanie.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-11T13:56:34.382Z",
               "EditorCaption": ""
