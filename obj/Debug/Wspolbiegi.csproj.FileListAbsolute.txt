@@ -1,0 +1,7 @@
+D:\WSPOLLLLLL\Wspolbiegi\bin\Debug\Wspolbiegi.exe.config
+D:\WSPOLLLLLL\Wspolbiegi\bin\Debug\Wspolbiegi.exe
+D:\WSPOLLLLLL\Wspolbiegi\bin\Debug\Wspolbiegi.pdb
+D:\WSPOLLLLLL\Wspolbiegi\obj\Debug\Wspolbiegi.csproj.AssemblyReference.cache
+D:\WSPOLLLLLL\Wspolbiegi\obj\Debug\Wspolbiegi.csproj.CoreCompileInputs.cache
+D:\WSPOLLLLLL\Wspolbiegi\obj\Debug\Wspolbiegi.exe
+D:\WSPOLLLLLL\Wspolbiegi\obj\Debug\Wspolbiegi.pdb
