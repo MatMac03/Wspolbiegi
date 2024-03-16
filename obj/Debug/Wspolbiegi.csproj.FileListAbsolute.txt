@@ -12,3 +12,10 @@ C:\Users\nikol\Source\Repos\MatMac03\Wspolbiegi\obj\Debug\Wspolbiegi.csproj.Asse
 C:\Users\nikol\Source\Repos\MatMac03\Wspolbiegi\obj\Debug\Wspolbiegi.csproj.CoreCompileInputs.cache
 C:\Users\nikol\Source\Repos\MatMac03\Wspolbiegi\obj\Debug\Wspolbiegi.exe
 C:\Users\nikol\Source\Repos\MatMac03\Wspolbiegi\obj\Debug\Wspolbiegi.pdb
+D:\Wspolbiegi\bin\Debug\Wspolbiegi.exe.config
+D:\Wspolbiegi\bin\Debug\Wspolbiegi.exe
+D:\Wspolbiegi\bin\Debug\Wspolbiegi.pdb
+D:\Wspolbiegi\obj\Debug\Wspolbiegi.csproj.AssemblyReference.cache
+D:\Wspolbiegi\obj\Debug\Wspolbiegi.csproj.CoreCompileInputs.cache
+D:\Wspolbiegi\obj\Debug\Wspolbiegi.exe
+D:\Wspolbiegi\obj\Debug\Wspolbiegi.pdb

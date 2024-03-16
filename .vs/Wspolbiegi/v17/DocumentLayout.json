@@ -1,12 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\",
+  "WorkspaceRootPath": "D:\\Wspolbiegi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EEE3EDC8-19E2-4A60-BAD3-AD42FF5834A9}|..\\Test1\\Test1.csproj|c:\\users\\nikol\\source\\repos\\matmac03\\test1\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{76EC0109-B283-4028-9B9B-91F6A362E065}|TestProject1\\TestProject1.csproj|d:\\wspolbiegi\\testproject1\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76EC0109-B283-4028-9B9B-91F6A362E065}|TestProject1\\TestProject1.csproj|solutionrelative:testproject1\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6E8671CA-BA92-485B-AA98-EEDB34D91B01}|Wspolbiegi.csproj|C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Dodawanie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6E8671CA-BA92-485B-AA98-EEDB34D91B01}|Wspolbiegi.csproj|D:\\Wspolbiegi\\Dodawanie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6E8671CA-BA92-485B-AA98-EEDB34D91B01}|Wspolbiegi.csproj|solutionrelative:Dodawanie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -31,27 +32,31 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "UnitTest1.cs",
-              "DocumentMoniker": "C:\\Users\\nikol\\source\\repos\\MatMac03\\Test1\\UnitTest1.cs",
-              "RelativeDocumentMoniker": "..\\Test1\\UnitTest1.cs",
-              "ToolTip": "C:\\Users\\nikol\\source\\repos\\MatMac03\\Test1\\UnitTest1.cs",
-              "RelativeToolTip": "..\\Test1\\UnitTest1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAkAAAA",
+              "DocumentMoniker": "D:\\Wspolbiegi\\TestProject1\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "TestProject1\\UnitTest1.cs",
+              "ToolTip": "D:\\Wspolbiegi\\TestProject1\\UnitTest1.cs",
+              "RelativeToolTip": "TestProject1\\UnitTest1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-11T13:58:04.01Z",
+              "WhenOpened": "2024-03-16T15:09:27.438Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Dodawanie.cs",
-              "DocumentMoniker": "C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Dodawanie.cs",
+              "DocumentMoniker": "D:\\Wspolbiegi\\Dodawanie.cs",
               "RelativeDocumentMoniker": "Dodawanie.cs",
-              "ToolTip": "C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Dodawanie.cs",
+              "ToolTip": "D:\\Wspolbiegi\\Dodawanie.cs",
               "RelativeToolTip": "Dodawanie.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-11T13:56:34.382Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             }
           ]
         }
