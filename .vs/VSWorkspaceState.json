@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\TestProject1"
   ],
-  "SelectedNode": "\\Wspolbiegi.sln",
+  "SelectedNode": "\\Wspolbiegi.csproj",
   "PreviewInSolutionExplorer": false
 }
