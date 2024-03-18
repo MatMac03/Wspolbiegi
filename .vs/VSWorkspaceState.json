@@ -1,8 +1,11 @@
 {
   "ExpandedNodes": [
     "",
+    "\\bin",
+    "\\obj",
+    "\\obj\\x86",
     "\\TestProject1"
   ],
-  "SelectedNode": "\\Wspolbiegi.csproj",
+  "SelectedNode": "\\obj\\x86\\Debug",
   "PreviewInSolutionExplorer": false
 }
