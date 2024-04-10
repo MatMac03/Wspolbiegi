@@ -1,11 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\bin",
-    "\\obj",
-    "\\obj\\x86",
-    "\\TestProject1"
+    ""
   ],
-  "SelectedNode": "\\obj\\x86\\Debug",
+  "SelectedNode": "\\Tests",
   "PreviewInSolutionExplorer": false
 }
