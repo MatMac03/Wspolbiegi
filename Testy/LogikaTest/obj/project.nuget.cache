@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QjcQlM66LsXd/pcj1ppcbVhaDULZOc1M4b2rwNGECLhSRE5NcnknqHVcoxeEAy3j1FaFAwG2IAvVqjgiuKUSGA==",
+  "dgSpecHash": "/VnbaLonifctZfsunr/4ievuvuC8lGtq/dFik976gJNYej3GVezSdgF+AF48xHFExU/wB8YPFAx04Udy0La98w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Tests\\LogikaTest\\LogikaTest.csproj",
+  "projectFilePath": "C:\\Users\\nikol\\Source\\Repos\\MatMac03\\Wspolbiegi\\Testy\\LogikaTest\\LogikaTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nikol\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
     "C:\\Users\\nikol\\.nuget\\packages\\microsoft.codecoverage\\17.8.0\\microsoft.codecoverage.17.8.0.nupkg.sha512",

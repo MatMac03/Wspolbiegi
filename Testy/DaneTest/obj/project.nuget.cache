@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4JByTtq8FjmGHceUvIY7XmksD/6s8kMrNwFQYXXkkSlPLk/dgmz3qwZUEhfuUqbi4/1YvrU4B2v4hfvjel2cZQ==",
+  "dgSpecHash": "g6IvtCfkS1QM63jtNBA1PrTr2yI1eQs9SJJAnqgfjspAQWQPc0U+dh+ADirz81zKklRmutkZ4/Y5LH8PX52Sqg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Tests\\DaneTest\\DaneTest.csproj",
+  "projectFilePath": "C:\\Users\\nikol\\Source\\Repos\\MatMac03\\Wspolbiegi\\Testy\\DaneTest\\DaneTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nikol\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
     "C:\\Users\\nikol\\.nuget\\packages\\microsoft.codecoverage\\17.8.0\\microsoft.codecoverage.17.8.0.nupkg.sha512",

@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Dane\\Dane.csproj": {}
+    "C:\\Users\\nikol\\Source\\Repos\\MatMac03\\Wspolbiegi\\Dane\\Dane.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Dane\\Dane.csproj": {
+    "C:\\Users\\nikol\\Source\\Repos\\MatMac03\\Wspolbiegi\\Dane\\Dane.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Dane\\Dane.csproj",
+        "projectUniqueName": "C:\\Users\\nikol\\Source\\Repos\\MatMac03\\Wspolbiegi\\Dane\\Dane.csproj",
         "projectName": "Dane",
-        "projectPath": "C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Dane\\Dane.csproj",
+        "projectPath": "C:\\Users\\nikol\\Source\\Repos\\MatMac03\\Wspolbiegi\\Dane\\Dane.csproj",
         "packagesPath": "C:\\Users\\nikol\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Dane\\obj\\",
         "projectStyle": "PackageReference",

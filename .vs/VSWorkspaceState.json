@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Dane",
+    "\\Logika",
+    "\\Testy",
+    "\\Testy\\DaneTest",
+    "\\Testy\\LogikaTest"
   ],
-  "SelectedNode": "\\Tests",
   "PreviewInSolutionExplorer": false
 }

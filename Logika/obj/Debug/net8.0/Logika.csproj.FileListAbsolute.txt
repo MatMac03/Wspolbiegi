@@ -1,0 +1,16 @@
+C:\Users\nikol\Source\Repos\MatMac03\Wspolbiegi\Logika\obj\Debug\net8.0\Logika.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nikol\Source\Repos\MatMac03\Wspolbiegi\Logika\obj\Debug\net8.0\Logika.AssemblyInfoInputs.cache
+C:\Users\nikol\Source\Repos\MatMac03\Wspolbiegi\Logika\obj\Debug\net8.0\Logika.AssemblyInfo.cs
+C:\Users\nikol\Source\Repos\MatMac03\Wspolbiegi\Logika\obj\Debug\net8.0\Logika.csproj.CoreCompileInputs.cache
+C:\Users\nikol\Source\Repos\MatMac03\Wspolbiegi\Logika\obj\Debug\net8.0\Logika.sourcelink.json
+C:\Users\nikol\Source\Repos\MatMac03\Wspolbiegi\Logika\bin\Debug\net8.0\Logika.deps.json
+C:\Users\nikol\Source\Repos\MatMac03\Wspolbiegi\Logika\bin\Debug\net8.0\Logika.dll
+C:\Users\nikol\Source\Repos\MatMac03\Wspolbiegi\Logika\bin\Debug\net8.0\Logika.pdb
+C:\Users\nikol\Source\Repos\MatMac03\Wspolbiegi\Logika\bin\Debug\net8.0\Dane.dll
+C:\Users\nikol\Source\Repos\MatMac03\Wspolbiegi\Logika\bin\Debug\net8.0\Dane.pdb
+C:\Users\nikol\Source\Repos\MatMac03\Wspolbiegi\Logika\obj\Debug\net8.0\Logika.csproj.AssemblyReference.cache
+C:\Users\nikol\Source\Repos\MatMac03\Wspolbiegi\Logika\obj\Debug\net8.0\Logika.csproj.Up2Date
+C:\Users\nikol\Source\Repos\MatMac03\Wspolbiegi\Logika\obj\Debug\net8.0\Logika.dll
+C:\Users\nikol\Source\Repos\MatMac03\Wspolbiegi\Logika\obj\Debug\net8.0\refint\Logika.dll
+C:\Users\nikol\Source\Repos\MatMac03\Wspolbiegi\Logika\obj\Debug\net8.0\Logika.pdb
+C:\Users\nikol\Source\Repos\MatMac03\Wspolbiegi\Logika\obj\Debug\net8.0\ref\Logika.dll
