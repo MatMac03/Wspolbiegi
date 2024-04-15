@@ -17,7 +17,7 @@ namespace Dane
 
         public Ball(int maxX, int maxY)
         {
-            this.promien = 5.0f;
+            this.promien = 2.0f;
             this.x = losowaPozycja(maxX);
             this.y = losowaPozycja(maxY);
             this.predkoscX = LosowaPredkosc(-10, 10);

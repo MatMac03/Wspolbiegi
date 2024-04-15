@@ -16,17 +16,17 @@
                 <RowDefinition Height="360"/>
             </Grid.RowDefinitions>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,361,0,-72">
-                <Button Content="start simulation" Height="20" VerticalAlignment="Center" Margin="230, 10, 50, 20" Command="{Binding startSim}" />
+                <Button Content="START" Height="20" VerticalAlignment="Center" Margin="230, 10, 50, 20" Command="{Binding startSim}" />
                 <StackPanel Margin="0, 0, 0, 20">
                     <TextBlock Text="Ilość kul" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                    <TextBox VerticalAlignment="Center" Width="100" Text="{Binding chooseBallAmount}"/>
+                    <TextBox Width="100" Text="{Binding chooseBallAmount}"/>
                 </StackPanel>
-                <Button Content="stop simulation"  Height="20" VerticalAlignment="Center" Margin="50, 10, 230, 20" Command="{Binding stopSim}"/>
+                <Button Content="STOP"  Height="20" VerticalAlignment="Center" Margin="50, 10, 230, 20" Command="{Binding stopSim}"/>
             </StackPanel>
             <ItemsControl ItemsSource="{Binding ballsToDraw, UpdateSourceTrigger=PropertyChanged}" Height="361" VerticalAlignment="Center">
                 <ItemsControl.ItemsPanel>
                     <ItemsPanelTemplate>
-                        <Canvas Name="Canvas" Width="750" Height="350" Background="darkGreen"></Canvas>
+                        <Canvas Name="Canvas" Width="720" Height="320" Background="darkGreen"></Canvas>
                     </ItemsPanelTemplate>
                 </ItemsControl.ItemsPanel>
                 <ItemsControl.ItemContainerStyle>
