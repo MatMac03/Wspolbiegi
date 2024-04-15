@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "ogLXa8eh9Wl3oowJKqX7Gb4WnVfAJ0OcYEGxL0+72dqkJNx8zFLJGQXO95iCmLJ+pkb/N6H4E7BS4DG68fML/A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\nikol\\Source\\Repos\\MatMac03\\Wspolbiegi\\Prezentacja\\View\\View.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\nikol\\.nuget\\packages\\system.reactive\\6.0.0\\system.reactive.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

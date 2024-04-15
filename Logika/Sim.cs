@@ -76,7 +76,7 @@ namespace Logika
             return table.getPozycja();
         }
 
-        public event PropertyChangedEventHandler PropertyChanged;
+        public override event PropertyChangedEventHandler PropertyChanged;
 
         private void OnPropertyChanged(PropertyChangedEventArgs args)
         {

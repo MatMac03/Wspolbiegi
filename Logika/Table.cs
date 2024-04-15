@@ -26,16 +26,19 @@ namespace Logika
         {
             foreach (DataAbstractAPI ball in balls)
             {
-                if (ball.x + ball.getPromien() >= this.rozmiarX || ball.x + ball.getXPredkosc() + ball.getPromien() >= this.rozmiarX)
+                if (ball.x + ball.getPromien() >= this.rozmiarX || ball.x + ball.getXPredkosc() + ball.getPromien() >= this.rozmiarX ||
+                ball.x <= 0 || ball.x + ball.getXPredkosc() <= 0)
                 {
                     Logic.zmienKierunekX(ball);
                     Logic.aktualizujPozycje(ball);
                 }
-                if (ball.y + ball.getPromien() >= this.rozmiarY || ball.y + ball.getYPredkosc() + ball.getPromien() >= this.rozmiarY)
+                if (ball.y + ball.getPromien() >= this.rozmiarY || ball.y + ball.getYPredkosc() + ball.getPromien() >= this.rozmiarY ||
+                    ball.y <= 0 || ball.y + ball.getYPredkosc() <= 0)
                 {
                     Logic.zmienKierunekY(ball);
                     Logic.aktualizujPozycje(ball);
                 }
+
             }
         }
 

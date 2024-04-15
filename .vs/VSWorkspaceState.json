@@ -3,9 +3,11 @@
     "",
     "\\Dane",
     "\\Logika",
-    "\\Testy",
-    "\\Testy\\DaneTest",
-    "\\Testy\\LogikaTest"
+    "\\Prezentacja",
+    "\\Prezentacja\\Model",
+    "\\Prezentacja\\View",
+    "\\Prezentacja\\ViewModel"
   ],
+  "SelectedNode": "\\Prezentacja\\View\\View.sln",
   "PreviewInSolutionExplorer": false
 }

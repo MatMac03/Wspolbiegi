@@ -3,6 +3,26 @@
   "WorkspaceRootPath": "C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Prezentacja\\ViewModel\\Relay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Prezentacja\\ViewModel\\Relay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Prezentacja\\ViewModel\\ViewModel.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Prezentacja\\ViewModel\\ViewModel.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Prezentacja\\Model\\ModelAPI.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Prezentacja\\Model\\ModelAPI.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Prezentacja\\Model\\ModelBall.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Prezentacja\\Model\\ModelBall.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Prezentacja\\Model\\IModelBall.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Prezentacja\\Model\\IModelBall.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nikol\\Source\\Repos\\MatMac03\\Wspolbiegi\\Logika\\Table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Logika\\Table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -38,7 +58,66 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ViewModel.csproj",
+              "DocumentMoniker": "C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Prezentacja\\ViewModel\\ViewModel.csproj",
+              "RelativeDocumentMoniker": "Prezentacja\\ViewModel\\ViewModel.csproj",
+              "ToolTip": "C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Prezentacja\\ViewModel\\ViewModel.csproj",
+              "RelativeToolTip": "Prezentacja\\ViewModel\\ViewModel.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-04-14T20:21:35.308Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Relay.cs",
+              "DocumentMoniker": "C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Prezentacja\\ViewModel\\Relay.cs",
+              "RelativeDocumentMoniker": "Prezentacja\\ViewModel\\Relay.cs",
+              "ToolTip": "C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Prezentacja\\ViewModel\\Relay.cs",
+              "RelativeToolTip": "Prezentacja\\ViewModel\\Relay.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-14T20:21:31.758Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "ModelAPI.cs",
+              "DocumentMoniker": "C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Prezentacja\\Model\\ModelAPI.cs",
+              "RelativeDocumentMoniker": "Prezentacja\\Model\\ModelAPI.cs",
+              "ToolTip": "C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Prezentacja\\Model\\ModelAPI.cs",
+              "RelativeToolTip": "Prezentacja\\Model\\ModelAPI.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-14T18:05:06.102Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IModelBall.cs",
+              "DocumentMoniker": "C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Prezentacja\\Model\\IModelBall.cs",
+              "RelativeDocumentMoniker": "Prezentacja\\Model\\IModelBall.cs",
+              "ToolTip": "C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Prezentacja\\Model\\IModelBall.cs",
+              "RelativeToolTip": "Prezentacja\\Model\\IModelBall.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-14T18:04:23.593Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ModelBall.cs",
+              "DocumentMoniker": "C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Prezentacja\\Model\\ModelBall.cs",
+              "RelativeDocumentMoniker": "Prezentacja\\Model\\ModelBall.cs",
+              "ToolTip": "C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Prezentacja\\Model\\ModelBall.cs",
+              "RelativeToolTip": "Prezentacja\\Model\\ModelBall.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAADEAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-14T18:03:11.22Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "LogicAPI.cs",
               "DocumentMoniker": "C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Logika\\LogicAPI.cs",
               "RelativeDocumentMoniker": "Logika\\LogicAPI.cs",
@@ -50,20 +129,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "Table.cs",
               "DocumentMoniker": "C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Logika\\Table.cs",
               "RelativeDocumentMoniker": "Logika\\Table.cs",
               "ToolTip": "C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Logika\\Table.cs",
               "RelativeToolTip": "Logika\\Table.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAWAAAA",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAAAIAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T19:26:41.176Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-12T19:26:41.176Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "DataAPI.cs",
               "DocumentMoniker": "C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Dane\\DataAPI.cs",
               "RelativeDocumentMoniker": "Dane\\DataAPI.cs",
@@ -75,7 +153,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "Ball.cs",
               "DocumentMoniker": "C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Dane\\Ball.cs",
               "RelativeDocumentMoniker": "Dane\\Ball.cs",

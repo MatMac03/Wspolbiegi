@@ -3,8 +3,17 @@
   "WorkspaceRootPath": "C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Testy\\LogikaTest\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4EB26389-BAFE-4AE2-8980-C0EC4A67CE4E}|..\\..\\Logika\\Logika.csproj|c:\\users\\nikol\\source\\repos\\matmac03\\wspolbiegi\\logika\\sim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EB26389-BAFE-4AE2-8980-C0EC4A67CE4E}|..\\..\\Logika\\Logika.csproj|c:\\users\\nikol\\source\\repos\\matmac03\\wspolbiegi\\logika\\logicapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E11C8FC8-3BAE-43F8-AC2D-5563C609CB0F}|LogikaTest.csproj|c:\\users\\nikol\\source\\repos\\matmac03\\wspolbiegi\\testy\\logikatest\\logikatest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E11C8FC8-3BAE-43F8-AC2D-5563C609CB0F}|LogikaTest.csproj|solutionrelative:logikatest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EB26389-BAFE-4AE2-8980-C0EC4A67CE4E}|..\\..\\Logika\\Logika.csproj|c:\\users\\nikol\\source\\repos\\matmac03\\wspolbiegi\\logika\\table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Dane\\Ball.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -14,15 +23,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Dane\\DataAPI.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4EB26389-BAFE-4AE2-8980-C0EC4A67CE4E}|..\\..\\Logika\\Logika.csproj|c:\\users\\nikol\\source\\repos\\matmac03\\wspolbiegi\\logika\\sim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4EB26389-BAFE-4AE2-8980-C0EC4A67CE4E}|..\\..\\Logika\\Logika.csproj|c:\\users\\nikol\\source\\repos\\matmac03\\wspolbiegi\\logika\\logicapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4EB26389-BAFE-4AE2-8980-C0EC4A67CE4E}|..\\..\\Logika\\Logika.csproj|c:\\users\\nikol\\source\\repos\\matmac03\\wspolbiegi\\logika\\table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Tests\\LogikaTest\\UnitTest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -35,7 +35,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -47,7 +47,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "DataAPI.cs",
               "DocumentMoniker": "C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Dane\\DataAPI.cs",
               "RelativeDocumentMoniker": "..\\..\\Dane\\DataAPI.cs",
@@ -59,31 +59,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Sim.cs",
               "DocumentMoniker": "C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Logika\\Sim.cs",
               "RelativeDocumentMoniker": "..\\..\\Logika\\Sim.cs",
               "ToolTip": "C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Logika\\Sim.cs",
               "RelativeToolTip": "..\\..\\Logika\\Sim.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAfAAAA",
+              "ViewState": "AQIAAEYAAAAAAAAAAAAkwE4AAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T16:58:59.472Z"
+              "WhenOpened": "2024-04-14T16:58:59.472Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "Table.cs",
               "DocumentMoniker": "C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Logika\\Table.cs",
               "RelativeDocumentMoniker": "..\\..\\Logika\\Table.cs",
               "ToolTip": "C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Logika\\Table.cs",
               "RelativeToolTip": "..\\..\\Logika\\Table.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAA7wCkAAAAOAAAA",
+              "ViewState": "AQIAACEAAAAAAAAAAAAowC8AAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-14T16:30:35.806Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Ball.cs",
               "DocumentMoniker": "C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Dane\\Ball.cs",
               "RelativeDocumentMoniker": "..\\..\\Dane\\Ball.cs",
@@ -95,7 +96,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Logic.cs",
               "DocumentMoniker": "C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Logika\\Logic.cs",
               "RelativeDocumentMoniker": "..\\..\\Logika\\Logic.cs",
@@ -107,28 +108,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "LogicAPI.cs",
               "DocumentMoniker": "C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Logika\\LogicAPI.cs",
               "RelativeDocumentMoniker": "..\\..\\Logika\\LogicAPI.cs",
               "ToolTip": "C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Logika\\LogicAPI.cs",
               "RelativeToolTip": "..\\..\\Logika\\LogicAPI.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAYwA8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-14T15:13:55.769Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "LogikaTest.cs",
               "DocumentMoniker": "C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Testy\\LogikaTest\\LogikaTest.cs",
               "RelativeDocumentMoniker": "LogikaTest.cs",
               "ToolTip": "C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Testy\\LogikaTest\\LogikaTest.cs",
               "RelativeToolTip": "LogikaTest.cs",
-              "ViewState": "AQIAALcAAAAAAAAAAAAIwMUAAAAaAAAA",
+              "ViewState": "AQIAAKYAAAAAAAAAAADwv7UAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T15:03:24.656Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-14T15:03:24.656Z"
             },
             {
               "$type": "Document",

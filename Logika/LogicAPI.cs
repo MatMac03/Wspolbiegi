@@ -2,12 +2,14 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 
 
 namespace Logika
 {
     public abstract class LogicAbstractAPI
     {
+        public abstract event PropertyChangedEventHandler PropertyChanged;
         public abstract Table getTable();
         public abstract bool isRunning();
         public abstract void startSim();
