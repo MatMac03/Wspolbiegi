@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Testy\\DaneTest\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D5326430-2848-406A-AB68-D52C0FAE65A8}|..\\..\\Dane\\Dane.csproj|c:\\users\\nikol\\source\\repos\\matmac03\\wspolbiegi\\dane\\ball.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1AFE81D5-AB7D-4896-8473-04F50392DE17}|DaneTest.csproj|c:\\users\\nikol\\source\\repos\\matmac03\\wspolbiegi\\testy\\danetest\\danetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1AFE81D5-AB7D-4896-8473-04F50392DE17}|DaneTest.csproj|solutionrelative:danetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5326430-2848-406A-AB68-D52C0FAE65A8}|..\\..\\Dane\\Dane.csproj|c:\\users\\nikol\\source\\repos\\matmac03\\wspolbiegi\\dane\\ball.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Logika\\Table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -78,28 +78,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Ball.cs",
               "DocumentMoniker": "C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Dane\\Ball.cs",
               "RelativeDocumentMoniker": "..\\..\\Dane\\Ball.cs",
               "ToolTip": "C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Dane\\Ball.cs",
               "RelativeToolTip": "..\\..\\Dane\\Ball.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABQAAAAoAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABQAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-14T14:17:40.991Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "DaneTest.cs",
               "DocumentMoniker": "C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Testy\\DaneTest\\DaneTest.cs",
               "RelativeDocumentMoniker": "DaneTest.cs",
-              "ToolTip": "C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Testy\\DaneTest\\DaneTest.cs",
-              "RelativeToolTip": "DaneTest.cs",
-              "ViewState": "AQIAAEMAAAAAAAAAAAAkwFMAAAAAAAAA",
+              "ToolTip": "C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Testy\\DaneTest\\DaneTest.cs*",
+              "RelativeToolTip": "DaneTest.cs*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADEAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T14:11:43.399Z"
+              "WhenOpened": "2024-04-14T14:11:43.399Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

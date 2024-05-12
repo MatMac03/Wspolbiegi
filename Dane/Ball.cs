@@ -2,49 +2,73 @@
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Runtime.Intrinsics.X86;
+using System.Threading.Tasks;
 
 namespace Dane
 {
-    public class Ball : DataAbstractAPI, INotifyPropertyChanged
+    public interface IBall
     {
-        public override event PropertyChangedEventHandler PropertyChanged;
+        float x { get; set; }
+        float y { get; set; }
+
+        event PropertyChangedEventHandler PropertyChanged;
+        float getPromien();
+        float getXPredkosc();
+        float getYPredkosc();
+        void setXPredkosc(float xPredkosc);
+        void setYPredkosc(float yPredkosc);
+        float getMasa();
+        void updatePozycja();
+        void RaisePropertyChanged([CallerMemberName] string propertyName = null);
+    }
+
+    internal class Ball : INotifyPropertyChanged, IBall
+    {
+        public event PropertyChangedEventHandler PropertyChanged;
 
         private float promien;
         private float predkoscX;
         private float predkoscY;
-        public override float x { get; set; }
-        public override float y { get; set; }
+        private float masa { get; set; }
+        public float x { get; set; }
+        public float y { get; set; }
 
         public Ball(int maxX, int maxY)
         {
             this.promien = 2.0f;
+            this.masa = 5.0f;
             this.x = losowaPozycja(maxX);
             this.y = losowaPozycja(maxY);
             this.predkoscX = LosowaPredkosc(-10, 10);
             this.predkoscY = LosowaPredkosc(-10, 10);
         }
 
-        public override float getPromien()
+        public float getPromien()
         {
             return promien;
         }
 
-        public override float getXPredkosc()
+        public float getXPredkosc()
         {
             return predkoscX;
         }
 
-        public override float getYPredkosc()
+        public float getYPredkosc()
         {
             return predkoscY;
         }
 
-        public override void setXPredkosc(float xPredkosc)
+        public float getMasa()
+        {
+            return masa;
+        }
+
+        public void setXPredkosc(float xPredkosc)
         {
             predkoscX = xPredkosc;
         }
 
-        public override void setYPredkosc(float yPredkosc)
+        public void setYPredkosc(float yPredkosc)
         {
             predkoscY = yPredkosc;
         }
@@ -67,7 +91,20 @@ namespace Dane
             bool isWithinYBounds = this.y + this.predkoscY + this.promien < rozmiarY && this.y + this.predkoscY - this.promien > 0;
             return isWithinXBounds && isWithinYBounds;
         }
-        public override void RaisePropertyChanged([CallerMemberName] string? propertyName = null)
+
+        public void updatePozycja()
+        {
+            lock (this)
+            {
+                x += getXPredkosc();
+                y += getYPredkosc();
+
+                RaisePropertyChanged(nameof(x));
+                RaisePropertyChanged(nameof(y));
+            }
+        }
+
+        public void RaisePropertyChanged([CallerMemberName] string? propertyName = null)
         {
             this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }

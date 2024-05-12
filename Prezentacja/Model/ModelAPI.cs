@@ -9,17 +9,15 @@ namespace Model
 {
     public abstract class ModelAbstractAPI : IObservable<IModelBall>
     {
-        public static ModelAbstractAPI CreateModelAPI(int x, int y, int amount)
+        public static ModelAbstractAPI CreateModelAPI()
         {
-            LogicAbstractAPI api = LogicAbstractAPI.CreateLogicAPI(700, 300, amount);
-            Model model = new Model(api, amount);
-            return model;
+            return new Model();
         }
         public abstract void StartSim();
         public abstract void StopSim();
         public abstract IDisposable Subscribe(IObserver<IModelBall> observer);
         public abstract ModelBall[] getBalls();
-
+        public abstract void getTableParam(int x, int y, int ilosc);
         public abstract event PropertyChangedEventHandler PropertyChanged;
     }
 
@@ -32,28 +30,47 @@ namespace Model
         public override event PropertyChangedEventHandler PropertyChanged;
         public event EventHandler<BallChangeEventArgs> BallChanged;
         public IObservable<EventHandler> ballsChanged;
-        ModelBall[] ModelBall;
+        ModelBall[] modelBall;
 
         public override ModelBall[] getBalls()
         {
-            return ModelBall;
+            return modelBall;
         }
 
-        public Model(LogicAbstractAPI api, int ilosc)
+        public override void getTableParam(int x, int y, int ilosc)
         {
-            eventObservable = Observable.FromEventPattern<BallChangeEventArgs>(this, "BallChanged");
-            sim = api;
-            ModelBall = new ModelBall[ilosc];
+            sim.getTableParam(x, y, ilosc);
+            modelBall = new ModelBall[ilosc];
             for (int i = 0; i < ilosc; i++)
             {
-                ModelBall ball = new ModelBall(api.getPozycja()[i][0], api.getPozycja()[i][1]);
-                ModelBall[i] = ball;
-                api.PropertyChanged += OnBallChanged;
+                ModelBall ball = new ModelBall(sim.getPozycja()[i][0], sim.getPozycja()[i][1]);
+                modelBall[i] = ball;
+                sim.PropertyChanged += OnBallChanged;
             }
         }
+
+
+        public Model(LogicAbstractAPI api = null)
+        {
+            if (api == null)
+            {
+                this.sim = LogicAbstractAPI.CreateLogicAPI();
+            }
+            else
+            {
+                this.sim = api;
+            }
+            eventObservable = Observable.FromEventPattern<BallChangeEventArgs>(this, "BallChanged");
+        }
+
+        public void setLogicAPI(LogicAbstractAPI api)
+        {
+            sim = api;
+        }
+
         private void OnBallChanged(object sender, PropertyChangedEventArgs args)
         {
-            if (ModelBall[0].x != sim.getPozycja()[0][0] && ModelBall[0].y != sim.getPozycja()[0][1])
+            if (modelBall[0].x != sim.getPozycja()[0][0] && modelBall[0].y != sim.getPozycja()[0][1])
             {
                 UpdatePosition();
             }
@@ -62,8 +79,8 @@ namespace Model
         {
             for (int i = 0; i < sim.getPozycja().Length; i++)
             {
-                ModelBall[i].x = sim.getPozycja()[i][0];
-                ModelBall[i].y = sim.getPozycja()[i][1];
+                modelBall[i].x = sim.getPozycja()[i][0];
+                modelBall[i].y = sim.getPozycja()[i][1];
             }
         }
 

@@ -6,8 +6,11 @@
     "\\Prezentacja",
     "\\Prezentacja\\Model",
     "\\Prezentacja\\View",
-    "\\Prezentacja\\ViewModel"
+    "\\Prezentacja\\ViewModel",
+    "\\Testy",
+    "\\Testy\\DaneTest",
+    "\\Testy\\LogikaTest"
   ],
-  "SelectedNode": "\\Prezentacja\\View\\View.sln",
+  "SelectedNode": "\\Logika\\Sim.cs",
   "PreviewInSolutionExplorer": false
 }

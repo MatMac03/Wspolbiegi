@@ -10,80 +10,48 @@ namespace DaneTest
         public void setXPredkoscTest()
         {
             // Arrange
-            var api = DataAbstractAPI.CreateDataAPI(400, 100);
+            var table = DataAbstractAPI.CreateDataAPI();
+            table.setTableParam(400, 100, 1);
             float predkoscX = 10.0f;
 
             // Act
-            api.setXPredkosc(predkoscX);
+            IBall ball = table.getBalls()[0];
+            ball.setXPredkosc(predkoscX);
 
             // Assert
-            Assert.AreEqual(predkoscX, api.getXPredkosc());
+            Assert.AreEqual(predkoscX, ball.getXPredkosc());
         }
 
         [TestMethod]
         public void setYPredkoscTest()
         {
             // Arrange
-            var api = DataAbstractAPI.CreateDataAPI(400, 100);
+            var table = DataAbstractAPI.CreateDataAPI();
+            table.setTableParam(400, 100, 1);
             float predkoscY = 10.0f;
 
             // Act
-            api.setYPredkosc(predkoscY);
+            IBall ball = table.getBalls()[0];
+            ball.setYPredkosc(predkoscY);
 
             // Assert
-            Assert.AreEqual(predkoscY, api.getYPredkosc());
+            Assert.AreEqual(predkoscY, ball.getYPredkosc());
         }
 
         [TestMethod]
         public void positionTest()
         {
-            var ball = DataAbstractAPI.CreateDataAPI(100, 100);
+            var table = DataAbstractAPI.CreateDataAPI();
+            table.setTableParam(400, 100, 1);
             float posX = 50;
             float posY = 50;
 
+            IBall ball = table.getBalls()[0];
             ball.x = posX;
             ball.y = posY;
 
             Assert.AreEqual(posX, ball.x);
             Assert.AreEqual(posY, ball.y);
-        }
-
-        [TestMethod]
-        public void BallWithinBoundsTrue()
-        {
-            // Arrange
-            int rozmiarX = 400;
-            int rozmiarY = 100;
-            Ball ball = new Ball(rozmiarX, rozmiarY);
-            ball.x = 200;
-            ball.y = 50;
-            ball.setXPredkosc(5);
-            ball.setYPredkosc(5);
-
-            // Act
-            bool result = ball.IsWithinBounds(rozmiarX, rozmiarY);
-
-            // Assert
-            Assert.IsTrue(result);
-        }
-
-        [TestMethod]
-        public void BallWithinBoundsFalse()
-        {
-            // Arrange
-            int rozmiarX = 400;
-            int rozmiarY = 100;
-            Ball ball = new Ball(rozmiarX, rozmiarY);
-            ball.x = 450;
-            ball.y = 50;
-            ball.setXPredkosc(5);
-            ball.setYPredkosc(5);
-
-            // Act
-            bool result = ball.IsWithinBounds(rozmiarX, rozmiarY);
-
-            // Assert
-            Assert.IsFalse(result);
         }
     }
 }

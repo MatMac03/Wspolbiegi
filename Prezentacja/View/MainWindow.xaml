@@ -26,7 +26,7 @@
             <ItemsControl ItemsSource="{Binding ballsToDraw, UpdateSourceTrigger=PropertyChanged}" Height="361" VerticalAlignment="Center">
                 <ItemsControl.ItemsPanel>
                     <ItemsPanelTemplate>
-                        <Canvas Name="Canvas" Width="720" Height="320" Background="darkGreen"></Canvas>
+                        <Canvas Name="Canvas" Width="750" Height="350" Background="darkGreen"></Canvas>
                     </ItemsPanelTemplate>
                 </ItemsControl.ItemsPanel>
                 <ItemsControl.ItemContainerStyle>

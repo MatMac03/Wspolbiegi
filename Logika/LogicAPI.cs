@@ -1,4 +1,4 @@
-﻿using Dane;
+﻿/*using Dane;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -10,16 +10,19 @@ namespace Logika
     public abstract class LogicAbstractAPI
     {
         public abstract event PropertyChangedEventHandler PropertyChanged;
-        public abstract Table getTable();
+        public abstract DataAbstractAPI getTable();
         public abstract bool isRunning();
         public abstract void startSim();
 
         public abstract void stopSim();
 
-        public static LogicAbstractAPI CreateLogicAPI(int x, int y, int ilosc)
+        public abstract void getTableParam(int x, int y, int ilosc);
+
+        public static LogicAbstractAPI CreateLogicAPI()
         {
-            return new Sim(new Table(x, y, ilosc));
+            return new Sim();
         }
         public abstract float[][] getPozycja();
+        public abstract void setBalls(IBall[] balls);
     }
-}
+}*/

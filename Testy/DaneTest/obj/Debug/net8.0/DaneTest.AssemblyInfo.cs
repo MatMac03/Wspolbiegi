@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DaneTest")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fbb91f8361130b17162bbc2aeee5238a4c338e3e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ee9e42e792a796eea489fb85b4c23d20c0456bdd")]
 [assembly: System.Reflection.AssemblyProductAttribute("DaneTest")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DaneTest")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
