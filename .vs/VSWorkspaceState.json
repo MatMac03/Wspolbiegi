@@ -1,16 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\Dane",
-    "\\Logika",
-    "\\Prezentacja",
-    "\\Prezentacja\\Model",
-    "\\Prezentacja\\View",
-    "\\Prezentacja\\ViewModel",
-    "\\Testy",
-    "\\Testy\\DaneTest",
-    "\\Testy\\LogikaTest"
+    ""
   ],
-  "SelectedNode": "\\Logika\\Sim.cs",
+  "SelectedNode": "\\Logika.sln",
   "PreviewInSolutionExplorer": false
 }

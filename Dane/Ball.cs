@@ -35,7 +35,7 @@ namespace Dane
 
         public Ball(int maxX, int maxY)
         {
-            this.promien = 2.0f;
+            this.promien = 10.0f;
             this.masa = 5.0f;
             this.x = losowaPozycja(maxX);
             this.y = losowaPozycja(maxY);

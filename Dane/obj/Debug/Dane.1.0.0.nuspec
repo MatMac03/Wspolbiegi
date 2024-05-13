@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Dane</id>
+    <version>1.0.0</version>
+    <authors>Dane</authors>
+    <description>Package Description</description>
+    <repository type="git" commit="46e8a98ee694173b033c95904ef893d2973945ad" />
+    <dependencies>
+      <group targetFramework="net8.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\nikol\source\repos\MatMac03\Wspolbiegi\Dane\bin\Debug\net8.0\Dane.dll" target="lib\net8.0\Dane.dll" />
+  </files>
+</package>
