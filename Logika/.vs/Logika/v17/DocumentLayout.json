@@ -52,12 +52,11 @@
               "Title": "Sim.cs",
               "DocumentMoniker": "C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Logika\\Sim.cs",
               "RelativeDocumentMoniker": "Sim.cs",
-              "ToolTip": "C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Logika\\Sim.cs*",
-              "RelativeToolTip": "Sim.cs*",
+              "ToolTip": "C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Logika\\Sim.cs",
+              "RelativeToolTip": "Sim.cs",
               "ViewState": "AQIAAF0AAAAAAAAAAAAowIUAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T09:14:06.953Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-14T09:14:06.953Z"
             },
             {
               "$type": "Document",
@@ -69,8 +68,7 @@
               "RelativeToolTip": "Logic.cs",
               "ViewState": "AQIAABEAAAAAAAAAAAAgwA0AAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T21:55:19.59Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-13T21:55:19.59Z"
             },
             {
               "$type": "Document",
@@ -103,7 +101,7 @@
               "RelativeDocumentMoniker": "..\\Dane\\Ball.cs",
               "ToolTip": "C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Dane\\Ball.cs",
               "RelativeToolTip": "..\\Dane\\Ball.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAgwCYAAAAdAAAA",
+              "ViewState": "AQIAAGYAAAAAAAAAAAAAAHgAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-13T17:55:14.48Z",
               "EditorCaption": ""

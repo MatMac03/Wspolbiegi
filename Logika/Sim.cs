@@ -3,18 +3,22 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Diagnostics;
+using System.Numerics;
 using System.Threading;
 using System.Threading.Tasks;
 
 namespace Logika
 {
-    public class Sim : LogicAbstractAPI, INotifyPropertyChanged
-    {
-
+    public class Sim : LogicAbstractAPI
+    { 
         private DataAbstractAPI table;
         private bool running;
-        public List<Thread> threads = new List<Thread>();
+        private Thread collisionThread;
+        //public List<Thread> threads = new List<Thread>();
         public ObservableCollection<IBall> observableData = new ObservableCollection<IBall>();
+        private IBall[] balls;
+        public readonly object zamek = new object();
 
         public Sim(DataAbstractAPI table = null)
         {
@@ -47,8 +51,8 @@ namespace Logika
         private void ballCollision(IBall ball1, IBall ball2)
         {
             // Oblicz wektor normalny
-            float dx = ball2.x - ball1.x;
-            float dy = ball2.y - ball1.y;
+            float dx = ball2.Pos.X - ball1.Pos.X;
+            float dy = ball2.Pos.Y - ball1.Pos.Y;
             float distance = (float)Math.Sqrt(dx * dx + dy * dy); // odległość między kulami
             float n_x = dx / distance; // składowa x wektora normalnego
             float n_y = dy / distance; // składowa y wektora normalnego
@@ -58,63 +62,59 @@ namespace Logika
             float t_y = n_x;  // składowa y wektora stycznego
 
             // Prędkości wzdłuż normalnej i stycznej
-            float v1n = ball1.getXPredkosc() * (n_x) + ball1.getYPredkosc() * (n_y);
-            float v1t = ball1.getXPredkosc() * (t_x) + ball1.getYPredkosc() * (t_y);
+            float v1n = ball1.predkosc.X * (n_x) + ball1.predkosc.Y * (n_y);
+            float v1t = ball1.predkosc.X * (t_x) + ball1.predkosc.Y * (t_y);
 
-            float v2n = ball2.getXPredkosc() * (n_x) + ball2.getYPredkosc() * (n_y);
-            float v2t = ball2.getXPredkosc() * (t_x) + ball2.getYPredkosc() * (t_y);
+            float v2n = ball2.predkosc.X * (n_x) + ball2.predkosc.Y * (n_y);
+            float v2t = ball2.predkosc.X * (t_x) + ball2.predkosc.Y * (t_y);
 
             // Nowe prędkości wzdłuż normalnej po zderzeniu
             float u1n = ((ball1.getMasa() - ball2.getMasa()) * v1n + 2 * ball2.getMasa() * v2n) / (ball1.getMasa() + ball2.getMasa());
             float u2n = ((ball2.getMasa() - ball1.getMasa()) * v2n + 2 * ball1.getMasa() * v1n) / (ball2.getMasa() + ball1.getMasa());
 
             // Nowe prędkości całkowite dla każdej kuli
-            ball1.setXPredkosc(u1n * (n_x) + v1t * (t_x));
-            ball1.setYPredkosc(u1n * (n_y) + v1t * (t_y));
-
-            ball2.setXPredkosc(u2n * (n_x) + v2t * (t_x));
-            ball2.setYPredkosc(u2n * (n_y) + v2t * (t_y));
+            Vector2 predkosc1 = new Vector2(u1n * n_x + v1t * t_x, u1n * n_y + v1t * t_y);
+            Vector2 predkosc2 = new Vector2(u2n * n_x + v2t * t_x, u2n * n_y + v2t * t_y);
+            lock (zamek)
+            {
+                ball1.predkosc = predkosc1;
+                ball2.predkosc = predkosc2;
+            }
         }
 
         public void checkBorderCollisionForBall(IBall ball)
         {
-            if (ball.x + ball.getPromien() >= table.rozmiarX || ball.x + ball.getXPredkosc() + ball.getPromien() >= table.rozmiarX ||
-               ball.x <= 0 || ball.x + ball.getXPredkosc() <= 0)
+            lock (zamek)
             {
-                Logic.zmienKierunekX(ball);
+                if (ball.Pos.X + ball.getPromien() >= table.rozmiarX || ball.Pos.X + ball.predkosc.X + ball.getPromien() >= table.rozmiarX ||
+                   ball.Pos.X <= 0 || ball.Pos.X + ball.predkosc.X <= 0)
+                {
+                    Logic.zmienKierunekX(ball);
+                }
+                if (ball.Pos.Y + ball.getPromien() >= table.rozmiarY || ball.Pos.Y + ball.predkosc.Y + ball.getPromien() >= table.rozmiarY ||
+                    ball.Pos.Y <= 0 || ball.Pos.Y + ball.predkosc.Y <= 0)
+                {
+                    Logic.zmienKierunekY(ball);
+                }
             }
-            if (ball.y + ball.getPromien() >= table.rozmiarY || ball.y + ball.getYPredkosc() + ball.getPromien() >= table.rozmiarY ||
-                ball.y <= 0 || ball.y + ball.getYPredkosc() <= 0)
-            {
-                Logic.zmienKierunekY(ball);
-            }
-            updatePosition(ball);
         }
 
         private void lookForCollisions()
         {
-            while (this.running)
+            foreach (IBall ball1 in balls)
             {
-                IBall[] balls = table.getBalls();
-                foreach (var ball1 in balls)
+                lock (zamek)
                 {
-                    foreach (var ball2 in balls)
+                    checkBorderCollisionForBall(ball1);
+                    foreach (IBall ball2 in balls)
                     {
                         if (ball1 == ball2)
                         { continue; }
-                        if (Math.Sqrt((ball1.x - ball2.x) * (ball1.x - ball2.x) + (ball1.y - ball2.y) * (ball1.y - ball2.y)) <= ball1.getPromien() + ball2.getPromien())
+                        Vector2 tmp1 = ball1.Pos;
+                        Vector2 tmp2 = ball2.Pos;
+                        if (Math.Sqrt((tmp1.X - tmp2.X) * (tmp1.X - tmp2.X) + (tmp1.Y - tmp2.Y) * (tmp1.Y - tmp2.Y)) <= ball1.getPromien() + ball2.getPromien())
                         {
-                            lock (ball1)
-                            {
-                                lock (ball2)
-                                {
-                                    ballCollision(ball1, ball2);
-                                    checkBorderCollisionForBall(ball1);
-                                    ball2.updatePozycja();
-                                }
-                                checkBorderCollisionForBall(ball2);
-                                ball1.updatePozycja();
-                            }
+                            ballCollision(ball1, ball2);
                         }
                     }
                 }
@@ -128,27 +128,23 @@ namespace Logika
             if (!running)
             {
                 this.running = true;
-                Thread tableTask = new Thread(() =>
+                collisionThread = new Thread(() =>
                 {
-                    lookForCollisions();
-                    Thread.Sleep(10);
-                });
-                tableTask.Start();
-                foreach (var ball in this.table.getBalls())
-                {
-                    Thread thread = new Thread(() =>
+                    try
                     {
-                        while (this.running)
+                        while (running)
                         {
-                            checkBorderCollisionForBall(ball);
-                            ball.PropertyChanged += RelayBallUpdate;
-                            Thread.Sleep(10);
+                            lookForCollisions();
+                            Thread.Sleep(2);
                         }
-                    });
-                    thread.IsBackground = true;
-                    thread.Start();
-                    threads.Add(thread);
-                }
+                    }
+                    catch (ThreadInterruptedException)
+                    {
+                        Debug.WriteLine("Thread killed");
+                    }
+                });
+                collisionThread.IsBackground = true;
+                collisionThread.Start();
             }
         }
 
@@ -157,11 +153,15 @@ namespace Logika
             if (running)
             {
                 this.running = false;
-                threads.Clear();
+                this.collisionThread.Interrupt();
+                foreach (IBall b in balls)
+                {
+                    b.destroy();
+                }
             }
         }
 
-        public override float[][] getPozycja()
+        public override Vector2[] getPozycja()
         {
             return table.getPozycja();
         }
@@ -169,10 +169,12 @@ namespace Logika
         public override void getTableParam(int x, int y, int ilosc)
         {
             table.setTableParam(x, y, ilosc);
-            foreach (var ball in table.getBalls())
+            foreach (IBall ball in table.getBalls())
             {
-                this.observableData.Add((IBall)ball);
+                this.observableData.Add(ball);
+                ball.ChangedPosition += update;
             }
+            this.balls = table.getBalls();
         }
 
         public override void setBalls(IBall[] balls)
@@ -180,23 +182,38 @@ namespace Logika
             this.table.setBalls(balls);
         }
 
-        public void updatePosition(IBall ball)
-        {
-            table.updatePozycja(ball);
+        #nullable enable
+        public override event EventHandler<LogicEventArgs>? ChangedPosition;
 
-            ball.RaisePropertyChanged(nameof(ball.x));
-            ball.RaisePropertyChanged(nameof(ball.y));
+        private void OnPropertyChanged(LogicEventArgs args)
+        {
+            ChangedPosition?.Invoke(this, args);
         }
 
-        public override event PropertyChangedEventHandler PropertyChanged;
+        private void update(object sender, DataEventArgs e)
+        {
+            IBall ball = (IBall)sender;
+            Vector2 pos = ball.Pos;
+            LogicEventArgs args = new LogicEventArgs(pos);
+            OnPropertyChanged(args);
+        }
+        /* public void updatePosition(IBall ball)
+         {
+             table.updatePozycja(ball);
 
-        private void OnPropertyChanged(PropertyChangedEventArgs args)
-        {
-            PropertyChanged?.Invoke(this, args);
-        }
-        private void RelayBallUpdate(object source, PropertyChangedEventArgs args)
-        {
-            this.OnPropertyChanged(args);
-        }
+             ball.RaisePropertyChanged(nameof(ball.x));
+             ball.RaisePropertyChanged(nameof(ball.y));
+         }
+
+         public override event PropertyChangedEventHandler PropertyChanged;
+
+         private void OnPropertyChanged(PropertyChangedEventArgs args)
+         {
+             PropertyChanged?.Invoke(this, args);
+         }
+         private void RelayBallUpdate(object source, PropertyChangedEventArgs args)
+         {
+             this.OnPropertyChanged(args);
+         }*/
     }
 }

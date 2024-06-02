@@ -2,28 +2,30 @@ using Logika;
 using Dane;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
+using System.Numerics;
 
 namespace LogikaTest
 {
 
     public class TestBall : IBall
     {
-        public float x { get; set; }
-        public float y { get; set; }
+        public Vector2 Pos { get; set; }
 
-        private float predkoscX;
-        private float predkoscY;
+        public Vector2 predkosc { get; set; }
+
+        //private float predkoscX;
+        //private float predkoscY;
         private float masa;
         private float promien;
 
-        public event PropertyChangedEventHandler PropertyChanged;
+        public event EventHandler<DataEventArgs>? ChangedPosition;
+
 
         public TestBall(float x, float y, float predkoscX, float predkoscY)
         {
-            this.x = x;
-            this.y = y;
-            this.predkoscX = predkoscX;
-            this.predkoscY = predkoscY;
+            Vector2 pos = new Vector2(x, y);
+            Vector2 predkosc = new Vector2(predkoscX, predkoscY);
+            this.Pos = pos; this.predkosc = predkosc;
         }
 
         public float getPromien()
@@ -31,7 +33,7 @@ namespace LogikaTest
             return promien;
         }
 
-        public float getXPredkosc()
+        /*public float getXPredkosc()
         {
             return predkoscX;
         }
@@ -39,32 +41,43 @@ namespace LogikaTest
         public float getYPredkosc()
         {
             return predkoscY;
-        }
+        }*/
 
         public float getMasa()
         {
             return masa;
         }
 
+        public void move()
+        {
+            this.Pos += predkosc;
+            DataEventArgs args = new DataEventArgs(Pos);
+            ChangedPosition?.Invoke(this, args);
+        }
+
+        public void destroy()
+        {
+            throw new NotImplementedException();
+        }
+
+        public float getXPredkosc()
+        {
+            throw new NotImplementedException();
+        }
+
+        public float getYPredkosc()
+        {
+            throw new NotImplementedException();
+        }
+
         public void setXPredkosc(float xPredkosc)
         {
-            predkoscX = xPredkosc;
+            throw new NotImplementedException();
         }
 
         public void setYPredkosc(float yPredkosc)
         {
-            predkoscY = yPredkosc;
-        }
-
-        public void RaisePropertyChanged([CallerMemberName] string propertyName = null)
-        {
-            this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
-
-        public void updatePozycja()
-        {
-            x += getXPredkosc();
-            y += getYPredkosc();
+            throw new NotImplementedException();
         }
     }
     [TestClass]
@@ -85,7 +98,7 @@ namespace LogikaTest
             Logika.Logic.zmienKierunekX(ball);
 
             // Assert
-            Assert.AreEqual(ball.getXPredkosc(), -5);
+            Assert.AreEqual(ball.predkosc.X, -5);
         }
 
         [TestMethod]
@@ -102,7 +115,7 @@ namespace LogikaTest
             Logika.Logic.zmienKierunekY(ball);
 
             // Assert
-            Assert.AreEqual(ball.getYPredkosc(),-5);
+            Assert.AreEqual(ball.predkosc.Y,-5);
         }
 
         [TestMethod]
@@ -115,11 +128,11 @@ namespace LogikaTest
             balls[0] = ball;
             api.setBalls(balls);
 
-            ball.updatePozycja();
+            ball.move();
 
             // Assert
-            Assert.AreEqual(55, ball.x);
-            Assert.AreEqual(55, ball.y);
+            Assert.AreEqual(55, ball.Pos.X);
+            Assert.AreEqual(55, ball.Pos.Y);
         }
 
        

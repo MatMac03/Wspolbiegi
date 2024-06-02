@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel;
+using System.Numerics;
 using System.Runtime.CompilerServices;
 
 namespace Dane
@@ -14,9 +15,9 @@ namespace Dane
         }
         public abstract IBall[] getBalls();
         public abstract void setBalls(IBall[] balls);
-        public abstract float[][] getPozycja();
+        public abstract Vector2[] getPozycja();
         public abstract void setTableParam(int x, int y, int ballsAmount);
-        public abstract void updatePozycja(IBall ball);
+        //public abstract void updatePozycja(IBall ball);
         public abstract void clear();
 
         /*public abstract float x { get; set; }

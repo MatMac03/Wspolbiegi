@@ -8,6 +8,18 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\ViewModel\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA25DD24-FA19-47DC-B98D-9FF7856765FC}|..\\Model\\Model.csproj|c:\\users\\nikol\\source\\repos\\matmac03\\wspolbiegi\\prezentacja\\model\\imodelball.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA25DD24-FA19-47DC-B98D-9FF7856765FC}|..\\Model\\Model.csproj|c:\\users\\nikol\\source\\repos\\matmac03\\wspolbiegi\\prezentacja\\model\\modelapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA25DD24-FA19-47DC-B98D-9FF7856765FC}|..\\Model\\Model.csproj|c:\\users\\nikol\\source\\repos\\matmac03\\wspolbiegi\\prezentacja\\model\\modeleventargs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA25DD24-FA19-47DC-B98D-9FF7856765FC}|..\\Model\\Model.csproj|c:\\users\\nikol\\source\\repos\\matmac03\\wspolbiegi\\prezentacja\\model\\modelball.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -17,7 +29,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -29,13 +41,61 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ModelEventArgs.cs",
+              "DocumentMoniker": "C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Prezentacja\\Model\\ModelEventArgs.cs",
+              "RelativeDocumentMoniker": "..\\Model\\ModelEventArgs.cs",
+              "ToolTip": "C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Prezentacja\\Model\\ModelEventArgs.cs",
+              "RelativeToolTip": "..\\Model\\ModelEventArgs.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T10:23:28.483Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ModelBall.cs",
+              "DocumentMoniker": "C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Prezentacja\\Model\\ModelBall.cs",
+              "RelativeDocumentMoniker": "..\\Model\\ModelBall.cs",
+              "ToolTip": "C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Prezentacja\\Model\\ModelBall.cs",
+              "RelativeToolTip": "..\\Model\\ModelBall.cs",
+              "ViewState": "AQIAAEMAAAAAAAAAAAAwwD4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T10:21:08.866Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ModelAPI.cs",
+              "DocumentMoniker": "C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Prezentacja\\Model\\ModelAPI.cs",
+              "RelativeDocumentMoniker": "..\\Model\\ModelAPI.cs",
+              "ToolTip": "C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Prezentacja\\Model\\ModelAPI.cs",
+              "RelativeToolTip": "..\\Model\\ModelAPI.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGwAAABRAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T10:21:06.457Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IModelBall.cs",
+              "DocumentMoniker": "C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Prezentacja\\Model\\IModelBall.cs",
+              "RelativeDocumentMoniker": "..\\Model\\IModelBall.cs",
+              "ToolTip": "C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Prezentacja\\Model\\IModelBall.cs",
+              "RelativeToolTip": "..\\Model\\IModelBall.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAADwvx4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T10:21:02.84Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "MainViewModel.cs",
               "DocumentMoniker": "C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Prezentacja\\ViewModel\\MainViewModel.cs",
               "RelativeDocumentMoniker": "MainViewModel.cs",
-              "ToolTip": "C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Prezentacja\\ViewModel\\MainViewModel.cs*",
-              "RelativeToolTip": "MainViewModel.cs*",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAYwDEAAAArAAAA",
+              "ToolTip": "C:\\Users\\nikol\\source\\repos\\MatMac03\\Wspolbiegi\\Prezentacja\\ViewModel\\MainViewModel.cs",
+              "RelativeToolTip": "MainViewModel.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAcwCIAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-14T23:09:19.527Z",
               "EditorCaption": ""

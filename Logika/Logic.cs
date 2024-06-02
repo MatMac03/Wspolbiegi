@@ -1,6 +1,7 @@
 ﻿using Dane;
 using System;
 using System.ComponentModel;
+using System.Numerics;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 
@@ -10,7 +11,8 @@ namespace Logika
 {
     public abstract class LogicAbstractAPI
     {
-        public abstract event PropertyChangedEventHandler PropertyChanged;
+        #nullable enable
+        public abstract event EventHandler<LogicEventArgs>? ChangedPosition;
         internal abstract DataAbstractAPI getTable();
         public abstract bool isRunning();
         public abstract void startSim();
@@ -25,7 +27,7 @@ namespace Logika
         {
             return new Sim();
         }
-        public abstract float[][] getPozycja();
+        public abstract Vector2[] getPozycja();
         public abstract void setBalls(IBall[] balls);
     }
     internal class Logic
@@ -42,14 +44,14 @@ namespace Logika
 
         static public void zmienKierunekX(IBall ball)
         {
-            ball.setXPredkosc(-ball.getXPredkosc());
-            //ball.RaisePropertyChanged(nameof(ball.getYPredkosc));
+            Vector2 predkosc = new Vector2(-ball.predkosc.X, ball.predkosc.Y);
+            ball.predkosc = predkosc; ;
         }
 
         static public void zmienKierunekY(IBall ball)
         {
-            ball.setYPredkosc(-ball.getYPredkosc());
-            //ball.RaisePropertyChanged(nameof(ball.getYPredkosc));
+            Vector2 predkosc = new Vector2(ball.predkosc.X, -ball.predkosc.Y);
+            ball.predkosc = predkosc;
         }
 
         /*

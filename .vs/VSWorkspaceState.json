@@ -1,7 +1,16 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Dane",
+    "\\Logika",
+    "\\Logika\\obj",
+    "\\Prezentacja",
+    "\\Prezentacja\\Model",
+    "\\Prezentacja\\View",
+    "\\Prezentacja\\ViewModel",
+    "\\Testy",
+    "\\Testy\\LogikaTest"
   ],
-  "SelectedNode": "\\Logika.sln",
+  "SelectedNode": "\\Prezentacja\\View\\View.sln",
   "PreviewInSolutionExplorer": false
 }

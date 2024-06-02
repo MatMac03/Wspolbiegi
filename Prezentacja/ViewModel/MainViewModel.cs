@@ -32,7 +32,7 @@ namespace ViewModel
         private void startSimHandler(object obj)
         {
             api = ModelAbstractAPI.CreateModelAPI();
-            getTableParam(730, 330, chooseBallAmount);
+            getTableParam(750, 350, chooseBallAmount);
             IDisposable observer = api.Subscribe<IModelBall>(x => ballsToDraw.Add(x));
             foreach (IModelBall b in api.getBalls())
             {

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LogikaTest")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ee9e42e792a796eea489fb85b4c23d20c0456bdd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d63f596ee016252be3082f7572f2b0412157927b")]
 [assembly: System.Reflection.AssemblyProductAttribute("LogikaTest")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LogikaTest")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

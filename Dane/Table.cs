@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Numerics;
 using System.Threading.Tasks;
 
 namespace Dane
@@ -7,11 +8,12 @@ namespace Dane
     {
         IBall[] getBalls();
         void checkBorderCollision();
-        float[][] getCoordinates();
+        float[][] getPozycja();
     }
 
     internal class Table : DataAbstractAPI
     {
+        Logger logger;
         public override int rozmiarX { get; set; }
         public override int rozmiarY { get; set; }
 
@@ -19,7 +21,11 @@ namespace Dane
 
         public override void clear()
         {
-            balls = new IBall[0];
+            foreach (IBall ball in balls)
+            {
+                ball.destroy();
+            }
+            balls = [];
         }
 
         public override IBall[] getBalls()
@@ -39,17 +45,19 @@ namespace Dane
             createBalls(rozmiarX, rozmiarY, ilosc);
         }
 
-        public void createBalls(int maxX, int maxY, int amount)
+        public void createBalls(int maxX, int maxY, int ilosc)
         {
-            IBall[] balls = new IBall[amount];
+            IBall[] balls = new IBall[ilosc];
             for (int i = 0; i < balls.Length; i++)
             {
-                balls[i] = new Ball(maxX, maxY);
+                balls[i] = new Ball(i, maxX, maxY, logger);
             }
             this.balls = balls;
         }
 
-        public Table() { }
+        public Table() {
+            logger = new Logger();
+        }
         /*
         public void checkBorderCollision()
         {
@@ -71,7 +79,7 @@ namespace Dane
             }
         }
         */
-        public override void updatePozycja(IBall ball) 
+       /* public override void updatePozycja(IBall ball) 
         {
             foreach (IBall b in balls)
             {
@@ -83,17 +91,15 @@ namespace Dane
                 }
             }
 
-        }
+        }*/
 
-        public override float[][] getPozycja()
+        public override Vector2[] getPozycja()
         {
-            float[][] pozycja = new float[balls.Length][];
+            Vector2[] pozycja = new Vector2[balls.Length];
             for (int i = 0; i < balls.Length; i++)
             {
-                float[] a = new float[2];
-                a[0] = balls[i].x;
-                a[1] = balls[i].y;
-                pozycja[i] = a;
+                Vector2 pos = balls[i].Pos;
+                pozycja[i] = pos;
             }
             return pozycja;
         }

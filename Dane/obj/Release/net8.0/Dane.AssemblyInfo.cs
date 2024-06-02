@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Dane")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+46e8a98ee694173b033c95904ef893d2973945ad")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d63f596ee016252be3082f7572f2b0412157927b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Dane")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Dane")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

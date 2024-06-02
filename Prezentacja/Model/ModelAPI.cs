@@ -3,6 +3,8 @@ using System;
 using System.Reactive.Linq;
 using System.ComponentModel;
 using System.Reactive;
+using System.Numerics;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 
 namespace Model
@@ -18,7 +20,8 @@ namespace Model
         public abstract IDisposable Subscribe(IObserver<IModelBall> observer);
         public abstract ModelBall[] getBalls();
         public abstract void getTableParam(int x, int y, int ilosc);
-        public abstract event PropertyChangedEventHandler PropertyChanged;
+        #nullable enable
+        public abstract event EventHandler<ModelEventArgs>? ChangedPosition;
     }
 
 
@@ -27,7 +30,8 @@ namespace Model
         private IObservable<EventPattern<BallChangeEventArgs>> eventObservable = null;
 
         public LogicAbstractAPI sim { get; set; }
-        public override event PropertyChangedEventHandler PropertyChanged;
+        #nullable enable
+        public override event EventHandler<ModelEventArgs>? ChangedPosition;
         public event EventHandler<BallChangeEventArgs> BallChanged;
         public IObservable<EventHandler> ballsChanged;
         ModelBall[] modelBall;
@@ -41,11 +45,12 @@ namespace Model
         {
             sim.getTableParam(x, y, ilosc);
             modelBall = new ModelBall[ilosc];
+            Vector2[] poss = sim.getPozycja();
             for (int i = 0; i < ilosc; i++)
             {
-                ModelBall ball = new ModelBall(sim.getPozycja()[i][0], sim.getPozycja()[i][1]);
+                ModelBall ball = new ModelBall(poss[i]);
                 modelBall[i] = ball;
-                sim.PropertyChanged += OnBallChanged;
+                sim.ChangedPosition += OnBallChanged;
             }
         }
 
@@ -68,9 +73,11 @@ namespace Model
             sim = api;
         }
 
-        private void OnBallChanged(object sender, PropertyChangedEventArgs args)
+        private void OnBallChanged(object sender, LogicEventArgs e)
         {
-            if (modelBall[0].x != sim.getPozycja()[0][0] && modelBall[0].y != sim.getPozycja()[0][1])
+            LogicAbstractAPI api = (LogicAbstractAPI)sender;
+            Dane.IBall[] balls = api.getBalls();
+            foreach (Dane.IBall ball in balls)
             {
                 UpdatePosition();
             }
@@ -79,8 +86,9 @@ namespace Model
         {
             for (int i = 0; i < sim.getPozycja().Length; i++)
             {
-                modelBall[i].x = sim.getPozycja()[i][0];
-                modelBall[i].y = sim.getPozycja()[i][1];
+                Vector2 pos = sim.getPozycja()[i];
+                modelBall[i].x = pos.X;
+                modelBall[i].y = pos.Y;
             }
         }
 
@@ -98,7 +106,7 @@ namespace Model
 
         public override IDisposable Subscribe(IObserver<IModelBall> observer)
         {
-            return eventObservable.Subscribe(x => observer.OnNext(x.EventArgs.Ball), ex => observer.OnError(ex), () => observer.OnCompleted());
+            return eventObservable.Subscribe(x => observer.OnNext((IModelBall)x.EventArgs.Ball), ex => observer.OnError(ex), observer.OnCompleted);
         }
     }
 }
