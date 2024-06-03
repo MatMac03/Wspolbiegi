@@ -21,7 +21,6 @@ namespace Dane
     {
         private ConcurrentQueue<IBall> ballsQueue;
         private string filename;
-        //private CancellationTokenSource StateChange = new CancellationTokenSource();
         private System.Timers.Timer timer;
         bool isRunning;
 
@@ -35,7 +34,6 @@ namespace Dane
             timer.Elapsed += OnTimedEvent;
             timer.AutoReset = true;
             timer.Enabled = true;
-            //Task.Run(writeDataToLogger);
         }
         private void OnTimedEvent(object sender, ElapsedEventArgs e)
         {
@@ -44,7 +42,6 @@ namespace Dane
         public void addToQueue(IBall ball)
         {
             ballsQueue.Enqueue(ball);
-            //StateChange.Cancel();
         }
 
         public async void writeDataToLogger()
@@ -61,7 +58,6 @@ namespace Dane
                             DataContractSerializer xmlSer = new DataContractSerializer(typeof(Ball));
                             xmlSer.WriteObject(writer, ball);
                         }
-                       // await Task.Delay(Timeout.Infinite, StateChange.Token).ContinueWith(_ => { });
                     }
                 }
             }
