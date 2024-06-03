@@ -12,6 +12,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Xml;
 using System.Xml.Serialization;
+using System.Timers;
 
 [assembly: InternalsVisibleTo("Program.XmlSerializers")]
 namespace Dane
@@ -20,7 +21,8 @@ namespace Dane
     {
         private ConcurrentQueue<IBall> ballsQueue;
         private string filename;
-        private CancellationTokenSource StateChange = new CancellationTokenSource();
+        //private CancellationTokenSource StateChange = new CancellationTokenSource();
+        private System.Timers.Timer timer;
         bool isRunning;
 
         public Logger()
@@ -29,16 +31,21 @@ namespace Dane
             filename = Path.Combine(path, "Logger.xml");
             ballsQueue = new ConcurrentQueue<IBall>();
             this.isRunning = true;
-            Task.Run(writeDataToLogger);
+            timer = new System.Timers.Timer(1000);
+            timer.Elapsed += OnTimedEvent;
+            timer.AutoReset = true;
+            timer.Enabled = true;
+            //Task.Run(writeDataToLogger);
         }
-
+        private void OnTimedEvent(object sender, ElapsedEventArgs e)
+        {
+            writeDataToLogger();
+        }
         public void addToQueue(IBall ball)
         {
             ballsQueue.Enqueue(ball);
-            StateChange.Cancel();
+            //StateChange.Cancel();
         }
-
-
 
         public async void writeDataToLogger()
         {
@@ -54,7 +61,7 @@ namespace Dane
                             DataContractSerializer xmlSer = new DataContractSerializer(typeof(Ball));
                             xmlSer.WriteObject(writer, ball);
                         }
-                        await Task.Delay(Timeout.Infinite, StateChange.Token).ContinueWith(_ => { });
+                       // await Task.Delay(Timeout.Infinite, StateChange.Token).ContinueWith(_ => { });
                     }
                 }
             }

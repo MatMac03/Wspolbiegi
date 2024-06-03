@@ -1,9 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Dane",
     "\\Logika",
     "\\Logika\\obj",
+    "\\obj",
     "\\Prezentacja",
     "\\Prezentacja\\Model",
     "\\Prezentacja\\View",
@@ -11,6 +11,6 @@
     "\\Testy",
     "\\Testy\\LogikaTest"
   ],
-  "SelectedNode": "\\Prezentacja\\View\\View.sln",
+  "SelectedNode": "\\Dane\\Ball.cs",
   "PreviewInSolutionExplorer": false
 }
